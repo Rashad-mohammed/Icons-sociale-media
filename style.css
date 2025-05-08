@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/image09.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+ul{
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+z-index: 999;
+}
+ul:before{
+    content: '\f1e0';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#94d227,#94d227);
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 2px;
+    transition: 0.5s;
+    z-index: 1;
+}
+ul:hover:before{
+    width: 60px;
+}
+ul li{
+    position: absolute;
+    list-style: none;
+    transition: 1s;
+}
+ul li a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    margin: 0 2px;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: 1s;
+}
+ul li:nth-child(1) a {
+background: #426782;
+}
+ul li:nth-child(2) a {
+background-image: linear-gradient(to right, #4050E6, #585108, #833484, #135847, #E1306C, #FD1010, #F56949, #F77737, #FCAF45, #FFDC88);
+}
+ul li:nth-child(3) a {
+background: #94d227;
+}
+ul li:nth-child(4) a {
+background: #FF0000;
+}
+ul li:nth-child(5) a {
+background: black;
+}
+ul li:nth-child(6) a {
+background: #822790;
+}
+
+ul:hover li:nth-child(1) a {
+transform: translateY(-64px) rotate(360deg);
+transition-delay: 0.85s;
+}
+ul:hover li:nth-child(2) a {
+transform: translateY(-128px) rotate(360deg);
+transition-delay: 0.5s;
+}
+ul:hover li:nth-child(3) a {
+transform: translateY(-192px) rotate(360deg);
+transition-delay: 0.4s;
+}
+ul:hover li:nth-child(4) a {
+transform: translateY(-256px) rotate(360deg);
+transition-delay: 0.2s;
+}
+ul:hover li:nth-child(5) a {
+transform: translateY(-320px) rotate(360deg);
+transition-delay: 0s;
+}
+ul:hover li:nth-child(6) a {
+transform: translateY(-384px) rotate(360deg);
+transition-delay: 0s;
+}
